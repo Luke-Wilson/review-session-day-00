@@ -1,9 +1,11 @@
 'use strict'
 var honeys = ['Wild Flower', 'Orange Blossom', 'Avocado', 'Blueberry'];
 
-var Grub = function() {
-  this.age = 0;
-  this.color = 'pink';
+var Grub = function(age, color) {
+  age = age || 0;
+  color = color || 'pink';
+  this.age = age;
+  this.color = color;
   this.food = honeys[Math.floor(Math.random()*5)];
 };
 
