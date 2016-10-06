@@ -13,6 +13,9 @@ Grub.prototype.eat = function() {
     return "ate " + this.food;
 };
 
+//You'll need to use babel to run this code in the console
+//You probably already have it installed from class so just cd into this folder in your terminal and run `babel .`
+
 //We've made a Grub class for you above already using traditional ES5 Construction
 
 //Create an ES6 style class for Bee
@@ -23,4 +26,4 @@ Grub.prototype.eat = function() {
 //Great job making that Bee!
 //Now create a GiantBee class
 //This bee will be a subclass of Bee and inherit most of its properties directly from Bee
-//GiantBee's
+//GiantBee's need a size property that is 'huge' by default
