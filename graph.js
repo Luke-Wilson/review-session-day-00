@@ -19,8 +19,13 @@ class Grub {
 
 //Copy in your Bee, and GiantBee Cunstructors from classes.js - they need to correctly inherit from Grub for your graph to work at the end
 
+//If you want to be fancy you can export and import, or use node and require. If you're not fancy, just copy and paste your constructors
 
+
+//--------------Graphs------------------//
 //Complete the Undirected Graph functions below
+
+//This is complete
 var Graph = function() {
   this._nodes = {};
 };
@@ -78,15 +83,16 @@ Graph.prototype.forEachNode = function(cb) {
   }
 };
 //---------------------------------------------------------//
+//-----Ok, good job - let's put it together. Make a Bee Graph!--------//
 
 //Instatiate a graph and 3 objects for Grub, Bee and GiantBee class (9 total objects)
-//ex. graph = new Graph()
+//ex. var graph = new Graph()
 
 //store the bees in an array, so that their index in the array corresponds to their id property
 var bees = ['FILL ME IN']
 
 //Place your bees into a graph, storing the Bee's id as its node value.
-bees.forEach(bee => /*put your bee into the graph using bee.id as its node value*/)
+bees.forEach(bee => {})
 
 
 //Create connections between bees that are of the same class, and bees that eat the same honey - you will have to access your bees from the bees array using their id to create the connections
