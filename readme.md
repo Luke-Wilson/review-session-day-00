@@ -19,3 +19,5 @@ Use the visualize function to test if your graph is built correctly.
 Build a tree that represents the rock, paper, permutations problem.
 
 The tree functions are done, you need to fill in the RPS function and add the game possibilities to a tree
+
+You should be able to do this in just a few lines of code

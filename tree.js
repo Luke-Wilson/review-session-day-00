@@ -45,7 +45,6 @@ Tree.prototype.traverse = function(callback) {
 Tree.prototype.visualize = function () {
   var s = '';
   this.traverse(node => {
-    console.log(node)
     s += ' ' + node
   })
   console.log(s)
