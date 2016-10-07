@@ -1,6 +1,13 @@
 ###Review Session 00
 
 ##Classes
+You'll need to use babel to run this code in the console
+You probably already have it installed from class so just cd into this folder in your terminal and run `babel .`
+
+We've made a Grub class for you already using traditional ES5 Construction
+
+Create an ES6 style class for Bee and then the GiantBee class
+(more description in js file)
 
 ##Graph
 Start by copying in your Bee and GiantBee constructors (the Grub constructor is alread).
