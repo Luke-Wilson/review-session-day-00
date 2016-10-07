@@ -30,8 +30,7 @@ Tree.prototype.contains = function(target) {
   };
 
 
-//This is a complete depth first search, but if you want a good visualization of your
-//rock paper scissors answer, use a breadth first search
+
 Tree.prototype.traverse = function(callback) {
   callback(this.value);
 
@@ -43,11 +42,12 @@ Tree.prototype.traverse = function(callback) {
 };
 
 Tree.prototype.visualize = function () {
-  var s = '';
+  var s = {};
   this.traverse(node => {
-    s += ' ' + node
-  })
-  console.log(s)
+    if(s[node.length] === undefined) s[node.length] = [];
+    s[node.length].push(node);
+  });
+  console.log(s);
 }
 
 //Your task is to create a tree that represents the decision tree for solving the rock-paper-scissors problem
@@ -66,12 +66,9 @@ function rockPaperPermutation (n, tree) {
 rockPaperPermutation(3, tree)
 
 tree.visualize()
-//The visualizer above runs off of tree.traverse(), which is a
-//depth first search. If you want a cleaner representation
-//of your tree change the traverse function to do a
-//breadth first search
 
-//                             ''
-//                          r - p - s
-// 1 round:                /    |     \
+
+// 0 rounds:                   ''
+// 1 round:                 r - p - s
+//                         /    |     \
 // 2 rounds:       rr-rp-rs  pr-pp-ps  sr-sp-ss
